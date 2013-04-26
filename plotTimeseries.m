@@ -4,7 +4,8 @@ function [date value] = plotTimeseries(filename, fmt)
 %
 %  To use: 
 %       filename - string filename you wish to plot (can be relative or absolute)
-%       fmt - the format of the 2-tuple (date value) - C standard
+%       fmt - the format of the 2-tuple (date value) - C standard (as with sprintf) - 
+%           for example, 2013-04-20  1857 would require fmt string '%s %d'
 %  Returns:
 %        date series
 %        value series
