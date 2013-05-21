@@ -14,6 +14,7 @@ function [date value] = plotTimeseries(filename, fmt)
 plot(value);
 
 xt=get(gca,'xtick');
+
 if (xt(end) > length(date))
     xt=get(gca,'xtick')(1:end-1);
 
